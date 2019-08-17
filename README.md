@@ -5,7 +5,7 @@ The snake-case is a naming convention that developers use it for variable or key
 ```json
 {
     "first_name": "Soheil",
-    "last_name": "alizadeh"
+    "last_name": "Alizadeh"
 }
 
 ```

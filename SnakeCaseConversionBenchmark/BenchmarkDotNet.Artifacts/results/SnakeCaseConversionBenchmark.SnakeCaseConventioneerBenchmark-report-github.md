@@ -1,17 +1,3 @@
-## Snake-Case Conversion 
-In this repository I prepared some implementation of snake-case with c# and .NET Core.
-
-### What is Snake-Case?
-The snake-case is a naming convention that developers use it for variable or key-value naming such as json, its format is like following json object. Splitting words with `_` and making them lowercase.
-```json
-{
-    "first_name": "Soheil",
-    "last_name": "Alizadeh"
-}
-
-```
-
-## Benchmarks
 ``` ini
 
 BenchmarkDotNet=v0.11.5, OS=Windows 10.0.18362
@@ -30,4 +16,3 @@ Intel Core i7-7700HQ CPU 2.80GHz (Kaby Lake), 1 CPU, 8 logical and 4 physical co
 |               ToSnakeCaseBySpan |   122.01 ns |  1.9066 ns |  1.6902 ns |    3 | 0.0253 |     - |     - |      80 B |
 |                 ToSnakeCaseLinq |   365.75 ns |  4.4839 ns |  3.5008 ns |    4 | 0.1450 |     - |     - |     456 B |
 |                ToSnakeCaseRegex | 2,108.71 ns | 40.6829 ns | 31.7625 ns |    5 | 0.1564 |     - |     - |     496 B |
-

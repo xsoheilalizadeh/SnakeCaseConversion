@@ -2,7 +2,7 @@
 <html lang='en'>
 <head>
 <meta charset='utf-8' />
-<title>SnakeCaseConversionBenchmark.SnakeCaseConventioneerBenchmark-20190817-103213</title>
+<title>SnakeCaseConversionBenchmark.SnakeCaseConventioneerBenchmark-20190913-051700</title>
 
 <style type="text/css">
 	table { border-collapse: collapse; display: block; width: 100%; overflow: auto; }
@@ -15,21 +15,21 @@
 <pre><code>
 BenchmarkDotNet=v0.11.5, OS=Windows 10.0.18362
 Intel Core i7-7700HQ CPU 2.80GHz (Kaby Lake), 1 CPU, 8 logical and 4 physical cores
-.NET Core SDK=3.0.100-preview8-013656
-  [Host]     : .NET Core 3.0.0-preview8-28405-07 (CoreCLR 4.700.19.37902, CoreFX 4.700.19.40503), 64bit RyuJIT
-  DefaultJob : .NET Core 3.0.0-preview8-28405-07 (CoreCLR 4.700.19.37902, CoreFX 4.700.19.40503), 64bit RyuJIT
+.NET Core SDK=3.0.100-preview9-014004
+  [Host]     : .NET Core 3.0.0-preview9-19423-09 (CoreCLR 4.700.19.42102, CoreFX 4.700.19.42104), 64bit RyuJIT
+  DefaultJob : .NET Core 3.0.0-preview9-19423-09 (CoreCLR 4.700.19.42102, CoreFX 4.700.19.42104), 64bit RyuJIT
 </code></pre>
 <pre><code></code></pre>
 
 <table>
 <thead><tr><th>                   Method</th><th> Mean</th><th>Error</th><th>StdDev</th><th>Rank</th><th>Gen 0</th><th>Gen 1</th><th>Gen 2</th><th>Allocated</th>
 </tr>
-</thead><tbody><tr><td>ToSnakeCaseStringBuilderBySpan</td><td>85.97 ns</td><td>1.0500 ns</td><td>0.9821 ns</td><td>1</td><td>0.0637</td><td>-</td><td>-</td><td>200 B</td>
-</tr><tr><td>ToSnakeCaseNewtonsoftJsonBySpan</td><td>86.35 ns</td><td>1.7816 ns</td><td>1.4877 ns</td><td>1</td><td>0.0484</td><td>-</td><td>-</td><td>152 B</td>
-</tr><tr><td>ToSnakeCaseNewtonsoftJson</td><td>88.89 ns</td><td>0.8417 ns</td><td>0.7461 ns</td><td>2</td><td>0.0484</td><td>-</td><td>-</td><td>152 B</td>
-</tr><tr><td>ToSnakeCaseBySpan</td><td>122.01 ns</td><td>1.9066 ns</td><td>1.6902 ns</td><td>3</td><td>0.0253</td><td>-</td><td>-</td><td>80 B</td>
-</tr><tr><td>ToSnakeCaseLinq</td><td>365.75 ns</td><td>4.4839 ns</td><td>3.5008 ns</td><td>4</td><td>0.1450</td><td>-</td><td>-</td><td>456 B</td>
-</tr><tr><td>ToSnakeCaseRegex</td><td>2,108.71 ns</td><td>40.6829 ns</td><td>31.7625 ns</td><td>5</td><td>0.1564</td><td>-</td><td>-</td><td>496 B</td>
+</thead><tbody><tr><td>ToSnakeCaseBySpan</td><td>27.47 ns</td><td>0.4629 ns</td><td>0.4330 ns</td><td>1</td><td>0.0153</td><td>-</td><td>-</td><td>48 B</td>
+</tr><tr><td>ToSnakeCaseStringBuilderBySpan</td><td>85.23 ns</td><td>1.6495 ns</td><td>1.3774 ns</td><td>2</td><td>0.0637</td><td>-</td><td>-</td><td>200 B</td>
+</tr><tr><td>ToSnakeCaseNewtonsoftJson</td><td>85.72 ns</td><td>1.6418 ns</td><td>1.4554 ns</td><td>2</td><td>0.0484</td><td>-</td><td>-</td><td>152 B</td>
+</tr><tr><td>ToSnakeCaseNewtonsoftJsonBySpan</td><td>86.96 ns</td><td>1.7060 ns</td><td>1.5958 ns</td><td>2</td><td>0.0484</td><td>-</td><td>-</td><td>152 B</td>
+</tr><tr><td>ToSnakeCaseLinq</td><td>353.42 ns</td><td>3.9670 ns</td><td>3.7108 ns</td><td>3</td><td>0.1450</td><td>-</td><td>-</td><td>456 B</td>
+</tr><tr><td>ToSnakeCaseRegex</td><td>2,056.69 ns</td><td>29.5694 ns</td><td>26.2125 ns</td><td>4</td><td>0.1526</td><td>-</td><td>-</td><td>496 B</td>
 </tr></tbody></table>
 </body>
 </html>

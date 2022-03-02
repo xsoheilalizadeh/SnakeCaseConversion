@@ -1,5 +1,5 @@
 ## Snake-Case Conversion 
-In this repository I prepared some implementation of snake-case with c# and .NET Core.
+In this repository I prepared some experimental implementation of snake-case with c# and .NET Core.
 
 ### What is Snake-Case?
 The snake-case is a naming convention that developers use it for variable or key-value naming such as json, its format is like following json object. Splitting words with `_` and making them lowercase.
